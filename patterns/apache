@@ -1,0 +1,2 @@
+APACHEERRORTIME %{DAY} %{MONTH} %{MONTHDAY} %{TIME}\.\d\d\d\d\d\d %{YEAR}
+APACHEERRORLOG \[%{APACHEERRORTIME:timestamp}\] \[(?<module>[^:]+):%{LOGLEVEL:loglevel}\] \[pid %{INT:pid}(:tid %{INT:threadId})?\] (\[client %{IPORHOST:clientip}\] )?%{GREEDYDATA:message}
