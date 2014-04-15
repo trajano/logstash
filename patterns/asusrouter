@@ -1,0 +1,1 @@
+ASUSROUTERSYSLOG <%{INT:syslog_pri}>%{SYSLOGTIMESTAMP:timestamp} %{SYSLOGPROG}: %{GREEDYDATA:message}
